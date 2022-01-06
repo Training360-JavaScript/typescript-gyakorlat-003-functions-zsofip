@@ -19,6 +19,9 @@ export default class Calculator {
      * @param {number} b - a második szám.
      * @returns {number} a két paraméterként kapott szám összege.
      */
+    sum(a: number, b: number) {
+        return a + b;
+    }
 
 
     /** 
@@ -29,7 +32,9 @@ export default class Calculator {
      * @param {number} b - a második szám.
      * @returns {number} a két paraméterként kapott szám különbsége.
      */
-
+    difference(a: number, b: number) {
+        return a - b;
+    }
     
     /** 
      * 3. feladat:
@@ -41,6 +46,9 @@ export default class Calculator {
      * @param {User} user - az objektum.
      * @returns {any} a kulcs alapján kiolvasott tulajdonság értéke.
      */
+     getProperty(user: {name: string, email: string}) {
+         return user.name;
+     }
 
 
 }
